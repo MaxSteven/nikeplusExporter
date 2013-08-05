@@ -96,7 +96,8 @@ class NikePlus:
             this_datetime = start_date + datetime.timedelta(n)
             this_date = this_datetime.strftime("%Y-%m-%d")
 
-            body = "data=%7B%22method%22%3A%22GET%22%2C%22url%22%3A%22https%3A%2F%2Fapi.nike.com%2Fme%2Fsport%2Factivities%3Faccess_token%3D{0}%26offset%3D{1}%26count%3D{2}%26startDate%3D{3}%26endDate%3D{4}%22%2C%22headers%22%3A%7B%22appid%22%3A%22%25appid%25%22%2C%22Accept%22%3A%22application%2Fjson%22%7D%2C%22body%22%3A%22%22%2C%22environment%22%3A%22prod%22%7D".format(self.token, offset, count, this_date, this_date)
+            #body = "data=%7B%22method%22%3A%22GET%22%2C%22url%22%3A%22https%3A%2F%2Fapi.nike.com%2Fme%2Fsport%2Factivities%3Faccess_token%3D{0}%26offset%3D{1}%26count%3D{2}%26startDate%3D{3}%26endDate%3D{4}%22%2C%22headers%22%3A%7B%22appid%22%3A%22%25appid%25%22%2C%22Accept%22%3A%22application%2Fjson%22%7D%2C%22body%22%3A%22%22%2C%22environment%22%3A%22prod%22%7D".format(self.token, offset, count, this_date, this_date)
+            body = "data=%7B%22method%22%3A%22GET%22%2C%22url%22%3A%22https%3A%2F%2Fapi.nike.com%2Fme%2Fsport%2Factivities%3Faccess_token%3D{0}%26offset%3D{1}%26startDate%3D{2}%26endDate%3D{3}%22%2C%22headers%22%3A%7B%22appid%22%3A%22%25appid%25%22%2C%22Accept%22%3A%22application%2Fjson%22%7D%2C%22body%22%3A%22%22%2C%22environment%22%3A%22prod%22%7D".format(self.token, offset, this_date, this_date)
 
             req = urllib2.Request(url, body)
             req.get_method = lambda: "POST"
