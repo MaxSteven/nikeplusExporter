@@ -1,32 +1,34 @@
-nikeplusExporter
-====================
-
-Features
+# nikeplusExporter
+#### Features
 - Python module to access the new Nike Plus (Nike+) API using python
 - Download Nike+ data (JSON format)
 - Export Nike+ data (TCX format)
 
-JSON download support:
+----------
+
+#### JSON download support:
 - Activity data, any Nike+ device
 - GPS data, any Nike+ device with GPS
 
-TCX export support
+#### TCX export support
 - Nike+ Running app with GPS (tested on iPhone5)
 - Nike+ Sportwatch GPS with footpod and Polar Wearlink+ heart rate monitor
 
-This has not been tested yet:
+#### Not yet supported devices/scenarios
 - Nike+ Running app: treadmill/indoor mode
 - Nike+ Sportwatch GPS with footpod
 - Nike+ Fuelband
 - Nike+ Sportband
 - Nike+ Running app: iPod with or without heart rate monitor link
 
-Roadmap
+#### Roadmap
 - TCX export support for most common scenarios
 - GUI
 
-Usage
------
+----------
+
+### Usage
+
 Just enter `python client.py` followed by the following arguments:
 - email address
 - start date (YYYY-MM-DD)
