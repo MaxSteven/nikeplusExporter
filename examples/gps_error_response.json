@@ -1,0 +1,5 @@
+{
+  "errorCode": "0x00000002", 
+  "errorMessage": "Activity has no GPS data", 
+  "result": "failure"
+}
