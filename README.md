@@ -29,11 +29,11 @@ Usage
 -----
 Just enter `python client.py` followed by the following arguments:
 - email address
-- start date
-- end date
+- start date (YYYY-MM-DD)
+- end date (YYYY-MM-DD)
 
 Optional arguments are `--debug`, which will spew out data in the prompt and `-h`, which will show all arguments.
 
-Example: `python client.py john.doe@gmail.com 2012-01-01 2013-01-01` – this will download all workouts throughout the year (this will take a while if you're a frequent runner). 
+Example: `python client.py john.doe@gmail.com 2012-01-01 2012-12-31` – this will download all workouts throughout the year (this will take a while if you're a frequent runner). 
 
 You will be prompted for your password each time you execute client.py. All workouts will be downloaded into a folder called "archive" and all TCX conversions will end up in a folder called "export".
